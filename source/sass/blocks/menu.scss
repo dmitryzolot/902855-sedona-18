@@ -1,0 +1,55 @@
+.menu {
+  text-align: center;
+}
+
+.menu--opened {
+  display: block;
+}
+
+.menu__list {
+  width: 100%;
+}
+
+.menu__item {
+  background: $blue;
+  border-bottom: 1px solid #678fa8;
+  list-style: none;
+  display: block;
+  padding: 7px 0;
+}
+
+.menu__item--active {
+  background: $blue-hover;
+}
+
+.menu__item--active:hover,
+.menu__item--active:active {
+  background: $blue-hover;
+}
+
+
+.menu__link {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.menu__link:hover {
+  color: $blue;
+}
+
+.menu__link:active {
+  color: $black30;
+}
+
+.menu__link--active {
+  color: #766357;
+}
+
+.menu__link--active:hover,
+.menu__link--active:active {
+  color: #766357;
+  cursor: default;
+}

@@ -1,0 +1,25 @@
+.copyright {
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.copyright__link {
+  height: 53px;
+}
+
+.copyright--done,
+.copyright__link {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.copyright--icon:hover {
+  fill: $blue;
+}
+
+.copyright--icon:active {
+  fill: #b2b2b2;
+}
