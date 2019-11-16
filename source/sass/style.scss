@@ -1,42 +1,13 @@
 @import "includes/normalize";
 
-body {
-  background: #ffffff;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  font-style: normal;
-  color: #000000;
-  text-transform: uppercase;
-  min-width: 320px;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-// шрифт
-@font-face {
-  font-family: "PT Sans";
-  src: local("PT Sans"),
-  url("../fonts/ptsans.woff") format("woff"),
-  url("../fonts/ptsans.woff2") format("woff2"),
-  url("../fonts/ptsansbold.woff") format("woff"),
-  url("../fonts/ptsansbold.woff2") format("woff2");
-}
-
 // подключение переменных
 @import "includes/variables.scss";
 
 // подключение миксинов
 @import "includes/mixins.scss";
+
+// подключение шрифтов
+@import "includes/fonts.scss";
 
 // подключение всех стилей
 @import "blocks/header.scss";
@@ -63,3 +34,4 @@ body {
 @import "blocks/form.scss";
 @import "blocks/form-sections.scss";
 @import "blocks/form-submit.scss";
+@import "blocks/visually-hidden.scss";

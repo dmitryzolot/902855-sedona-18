@@ -10,9 +10,11 @@
   box-sizing: border-box;
   padding: 16px 0;
   text-align: center;
+
   &:hover {
     background: $blue-hover;
   }
+
   &:active {
     background: $blue-active;
     color: $white30;
