@@ -1,0 +1,84 @@
+.advantage {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+
+  &__title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    color: #000000;
+  }
+
+  &__description {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+    color: #333333;
+  }
+}
+
+.advantage--first {
+  padding-top: 70px;
+}
+
+.advantage--blue .advantage__title {
+  color: white;
+}
+
+.advantage--blue {
+  min-height: 190px;
+  background-color: $blue;
+  color: white;
+}
+
+.advantage--grey {
+  background-color: #eeeeee;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.advantage--grey:last-child {
+  border-bottom: none;
+}
+
+.advantage--icon {
+  background: white;
+  text-align: left;
+  padding-left: 50px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  position: relative;
+}
+
+.advantage__description--white {
+  color: white;
+}
+
+.advantage--icon::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  left: 0;
+  top: 0;
+}
+
+.advantage--icon-home::before {
+  content: url("../img/icon-house.svg");
+}
+
+.advantage--icon-souvenirs::before {
+  content: url("../img/icon-gift.svg");
+}
+
+.advantage--icon-food::before {
+  content: url("../img/icon-burger.svg");
+}
+
+// .advantage--grey .advantage__title::after {
+//   width: 80%;
+//   height: 1px;
+//   content: "";
+//   display: block;
+//   background: #d6d6d6;
+//   position: absolute;
+// }

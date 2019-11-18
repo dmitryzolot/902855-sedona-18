@@ -1,0 +1,18 @@
+.intro {
+  position: relative;
+  width: 100%;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-color: $blue;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro__image {
+  padding-top: 52px;
+  padding-bottom: 69px;
+  display: block;
+  margin: 0 auto;
+  width: 229px;
+  height: 39px;
+}
