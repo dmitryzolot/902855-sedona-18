@@ -76,6 +76,42 @@ input[type="text"]:focus:hover {
   border: 4px solid #e5e5e5;
 }
 
+.form__meet::-webkit-input-placeholder {
+  color: black;
+}
+
+.form__meet::-moz-placeholder {
+  color: black;
+}
+
+.form__meet:-moz-placeholder {
+  color: black;
+}
+
+.form__meet:-ms-input-placeholder {
+  color: black;
+}
+
+.form__comment::-webkit-textarea-placeholder {
+  color: black;
+}
+
+.form__comment textarea::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.form__comment textarea::-moz-placeholder {
+  color: #000000;
+}
+
+.form__comment textarea:-moz-placeholder {
+  color: #000000;
+}
+
+.form__comment textarea:-ms-input-placeholder {
+  color: #000000;
+}
+
 .form__wrap {
   position: relative;
   margin-top: 10px;
