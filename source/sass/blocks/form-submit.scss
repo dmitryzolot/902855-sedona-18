@@ -1,0 +1,8 @@
+.form-submit {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form-submit input[type="submit"] {
+  @include btn;
+}

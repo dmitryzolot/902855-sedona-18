@@ -20,3 +20,35 @@
     color: $white30;
   }
 }
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin after-intro__header {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+@mixin after-intro__title () {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: black;
+  padding: 0 7%;
+}
+
+@mixin after-intro__description () {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #333333;
+  padding-top: 5px;
+  padding-left: 7%;
+  padding-right: 7%;
+}

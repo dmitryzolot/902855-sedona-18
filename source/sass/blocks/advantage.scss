@@ -2,20 +2,20 @@
   width: 100%;
   box-sizing: border-box;
   position: relative;
+}
 
-  &__title {
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 26px;
-    color: #000000;
-  }
+.advantage__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+}
 
-  &__description {
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 21px;
-    color: #333333;
-  }
+.advantage__description {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  color: #333333;
 }
 
 .advantage--first {
