@@ -1,4 +1,25 @@
+.header {
+  position: relative;
+
+  @include clearfix;
+}
+
 .header__wrapper {
   background: white;
   height: 58px;
+  position: relative;
+
+  @media ($tablet-width) {
+    background: none;
+    height: 1px;
+    position: static;
+  }
+}
+
+.header__menu-toggle {
+  float: right;
+
+  @media ($tablet-width) {
+    display: none;
+  }
 }

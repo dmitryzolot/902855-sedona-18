@@ -1,4 +1,10 @@
 .social-btns {
   margin-top: 35px;
   margin-bottom: 25px;
+
+  @media ($tablet-width) {
+    width: 33.333333%;
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
