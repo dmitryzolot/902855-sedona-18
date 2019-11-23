@@ -11,9 +11,7 @@
   background-size: cover;
   margin-bottom: 110px;
 
-  @media
-    (min-resolution: 144dpi),
-    (min-resolution: 1.5dppx) {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .intro-index {
       background-image: url("../img/video-mobile@2x.jpg");
     }
@@ -25,9 +23,7 @@
     background-image: url("../img/video-tablet.jpg");
     margin-bottom: 45px;
 
-    @media
-      (min-resolution: 144dpi),
-      (min-resolution: 1.5dppx) {
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .intro-index {
         background-image: url("../img/video-tablet@2x.jpg");
       }
@@ -40,9 +36,7 @@
     background-image: url("../img/video-desktop.jpg");
     margin-bottom: 95px;
 
-    @media
-      (min-resolution: 144dpi),
-      (min-resolution: 1.5dppx) {
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .intro-index {
         background-image: url("../img/video-desktop@2x.jpg");
       }
