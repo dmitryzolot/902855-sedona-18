@@ -52,3 +52,40 @@
   padding-left: 7%;
   padding-right: 7%;
 }
+
+@mixin advantage () {
+  font-size: 14px;
+  color: #333333;
+  text-align: center;
+  line-height: 21px;
+  font-weight: normal;
+  padding: 40px 6%;
+  background: #eeeeee;
+  min-height: 170px;
+
+  &--blue {
+    background: $blue;
+    color: white;
+  }
+}
+
+@mixin advantage__title {
+  font-weight: bold;
+  color: #000000;
+  font-size: 18px;
+}
+
+@media ($tablet-width) {
+  min-height: 256px;
+  padding: 50px 5.5%;
+  font-size: 21px;
+}
+
+@mixin advantage__number {
+  padding: 19px 0 13px;
+}
+
+@mixin advantage__description {
+  padding: 1px;
+  margin: 1px;
+}

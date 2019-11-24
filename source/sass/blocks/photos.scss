@@ -1,8 +1,42 @@
 .photos__title {
   font-size: 18px;
+
+  @include after-intro__title;
+}
+
+.photos {
+  @media ($tablet-width) {
+    padding: 0 8%;
+  }
+
+  @media ($desktop-width) {
+    padding: 1;
+  }
+}
+
+.photos__header {
+  @include after-intro__header;
+  padding: 25px 1px 20px;
 }
 
 .photos__description {
   line-height: 24px;
   color: #333333;
+
+  @include after-intro__description;
+
+  &--shift {
+    display: inline;
+
+    @media ($tablet-width) {
+      display: block;
+    }
+  }
+}
+
+.photos__container {
+  @media ($tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

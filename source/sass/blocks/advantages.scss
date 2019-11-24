@@ -1,8 +1,31 @@
 .advantages__description {
+  @include after-intro__description;
   padding-top: 15px;
+  padding-bottom: 1px;
   color: #333333;
 }
 
 .advantages__title {
   font-size: 18px;
+
+  @include after-intro__title;
+
+  @media ($tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.advantages__header {
+  @include after-intro__header;
+  padding-top: 29px;
+  padding-bottom: 1px;
+
+  @media ($tablet-width) {
+    font-size: 21px;
+    padding: 38px 15% 20px;
+  }
+
+  @media ($desktop-width) {
+    padding: 5px 20% 20px;
+  }
 }

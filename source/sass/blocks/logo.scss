@@ -4,4 +4,15 @@
   height: 83px;
   margin: 0 auto;
   z-index: 9998;
+
+  @media ($tablet-width) {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  @media ($desktop-width) {
+    width: 188px;
+    height: 96px;
+  }
 }

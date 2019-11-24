@@ -8,6 +8,10 @@
 
 .menu__list {
   width: 100%;
+
+  @media ($tablet-width) {
+    text-align: center;
+  }
 }
 
 .menu__item {
@@ -16,15 +20,61 @@
   list-style: none;
   display: block;
   padding: 7px 0;
+
+  &:hover {
+    background: $blue-hover;
+    color: white;
+
+    @media ($tablet-width) {
+      background: white;
+    }
+  }
+
+  &:active {
+    background: $blue-active;
+    color: $white30;
+
+    @media ($tablet-width) {
+      background: white;
+    }
+  }
+
+  @media ($tablet-width) {
+    display: inline-block;
+    background: white;
+    border-bottom: none;
+    color: black;
+    width: 20%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+    &:nth-child(2) {
+      margin-right: 20%;
+    }
+  }
+
+  @media ($desktop-width) {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 .menu__item--active {
   background: $blue-hover;
+
+  @media ($tablet-width) {
+    background: white;
+  }
 }
 
 .menu__item--active:hover,
 .menu__item--active:active {
   background: $blue-hover;
+
+  @media ($tablet-width) {
+    background: white;
+  }
 }
 
 
@@ -34,6 +84,12 @@
   font-size: 18px;
   line-height: 40px;
   font-weight: bold;
+
+  @media ($tablet-width) {
+    color: black;
+    font-size: 14px;
+    line-height: 26px;
+  }
 }
 
 .menu__link:hover {
@@ -46,6 +102,10 @@
 
 .menu__link--active {
   color: #766357;
+
+  @media ($tablet-width) {
+    color: #766357;
+  }
 }
 
 .menu__link--active:hover,
