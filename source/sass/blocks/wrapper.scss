@@ -1,0 +1,14 @@
+.wrapper {
+  background: white;
+  margin: 0 auto;
+  width: 320px;
+  box-shadow: 0 -5px 9px 2px #dbdbdb;
+
+  @media ($tablet-width) {
+    width: 100%;
+  }
+
+  @media ($desktop-width) {
+    width: 1200px;
+  }
+}

@@ -11,6 +11,33 @@
   @media ($desktop-width) {
     background-image: url("../img/bg-back-desktop.jpg");
   }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 27px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 322px 27px;
+    background-position-x: -1px;
+
+    @media ($tablet-width) {
+      background-image: url("../img/triangle/bg-intro-triangle-tablet.svg");
+      background-size: 100% 57px;
+      height: 57px;
+      bottom: 0;
+    }
+    @media ($desktop-width) {
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
+      background-size: 1202px 57px;
+      background-position-x: -1px;
+    }
+  }
 }
 
 .intro-index__image {

@@ -7,153 +7,155 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header">
-      <h1 class="visually-hidden">Город-курорт Седона</h1>
-      <button class="hamburger" type="button">
-      </button>
-      <button class="menu-close" type="button">
-      </button>
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
-          <li class="menu__item"><a href="photo.html" class="menu__link">Фото и видео</a></li>
-          <li class="menu__item menu__item--active"><a href="#" class="menu__link">Форма отзыва</a></li>
-          <li class="menu__item"><a href="https://htmlacademy.ru" class="menu__link">Html Academy</a></li>
-        </ul>
-      </nav>
-      <div class="header__wrapper">
-        <div class="logo">
-          <a href="index.html" class="logo__link">
-            <img src="img/logo-sedona-mobile.svg" alt="logo" class="logo__picture">
+    <div class="wrapper">
+      <header class="header">
+        <h1 class="visually-hidden">Город-курорт Седона</h1>
+        <button class="hamburger hamburger--collapse is-active" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+            <li class="menu__item"><a href="photo.html" class="menu__link">Фото и видео</a></li>
+            <li class="menu__item menu__item--active"><a href="#" class="menu__link">Форма отзыва</a></li>
+            <li class="menu__item"><a href="https://htmlacademy.ru" class="menu__link">Html Academy</a></li>
+          </ul>
+        </nav>
+        <div class="header__wrapper">
+          <div class="logo">
+            <a href="index.html" class="logo__link">
+              <img src="img/logo-sedona-mobile.svg" alt="logo" class="logo__picture">
+            </a>
+          </div>
+        </div>
+      </header>
+      <main class="page-content">
+        <div class="intro">
+          <div class="intro__image"></div>
+        </div>
+        <section class="form">
+          <div class="form__header">
+            <h2 class="form__title">Оставьте свой отзыв</h2>
+            <p class="form__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, <span class="form__description form__description--shift">а также о посещенных вами достопримечательностях</span></p>
+          </div>
+
+          <form action="https://echo.htmlacademy.ru" method="GET">
+
+            <div class="form-sections">
+              <div class="form-sections__item">
+                <div class="form__legend">Представьтесь<span class="form__legend form__legend--hide">, пожалуйста</span>:</div>
+                <div class="form__line">
+                  <label for="name">Имя</label>
+                  <input class="form__meet form__meet--long" type="text" placeholder="Петр" id="name" required>
+                </div>
+                <div class="form__line">
+                  <label for="surname">Фамилия</label>
+                  <input class="form__meet" type="text" placeholder="Иванов" id="surname" required>
+                </div>
+                <div class="form__line">
+                  <label for="middle-name">Отчество</label>
+                  <input class="form__meet" type="text" placeholder="Александрович" id="middle-name" required>
+                </div>
+              </div>
+
+              <div class="form-sections__item">
+                <div class="form__legend form__legend--decoration">
+                  <span class="form__legend form__legend--decoration-title">Контактная информация:</span>
+                </div>
+                <div class="form__line form__line--contact form__line--contact-first">
+                  <label for="phone"><span class="form__padding"><span class="form__line form__line--hide">Контактный </span>телефон:</span></label>
+                  <div class="form__wrap">
+                    <input class="form__contact" type="tel" placeholder="Введите телефон" id="phone" required>
+                    <div class="form__icon form__icon--phone"></div>
+                  </div>
+                </div>
+                <div class="form__line form__line--contact">
+                  <label for="email"><span class="form__padding">Электронная почта:</span></label>
+                  <div class="form__wrap">
+                    <input class="form__contact" type="email" placeholder="Введите e-mail" id="email" required>
+                    <div class="form__icon form__icon--mail"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-sections__item">
+                <div class="form__legend">Ваше Общее впечатление:</div>
+                <div class="form__line form__line--impression">
+                  <input class="form__impression" type="radio" name="impression" value="+1" id="positive" checked>
+                  <label for="positive">Скорее положительное</label>
+                </div>
+                <div class="form__line form__line--impression">
+                  <input class="form__impression" type="radio" name="impression" value="-1" id="negative">
+                  <label for="negative">Скорее отрицательное</label>
+                </div>
+                <div class="form__line form__line--impression">
+                  <input class="form__impression" type="radio" name="impression" value="0" id="neutral">
+                  <label for="neutral">Затрудняюсь ответить</label>
+                </div>
+              </div>
+
+              <div class="form-sections__item">
+                <div class="form__legend form__legend--decoration">
+                  <span class="form__legend form__legend--decoration-title">Посещенные достопримечательности:</span>
+                </div>
+                <div class="form-atractions">
+                  <div class="form__line form__line--atraction">
+                    <input class="form__atraction" type="checkbox" name="attraction1" id="attr1" checked>
+                    <label for="attr1">Мост Дьявола</label>
+                  </div>
+                  <div class="form__line form__line--atraction">
+                    <input class="form__atraction" type="checkbox" name="attraction2" id="attr2" checked>
+                    <label for="attr2">Слайд-парк</label>
+                  </div>
+                  <div class="form__line form__line--atraction">
+                    <input class="form__atraction" type="checkbox" name="attraction3" id="attr3">
+                    <label for="attr3">Гора-Колокол</label>
+                  </div>
+                  <div class="form__line form__line--atraction">
+                    <input class="form__atraction" type="checkbox" name="attraction4" id="attr4" checked>
+                    <label for="attr4">Красные скалы</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-sections__item">
+                <div class="form__legend form__legend--decoration">
+                  <span class="form__legend form__legend--decoration-title">Опишите свои эмоции:</span>
+                </div>
+                <div class="form__comment">
+                  <textarea name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-submit">
+              <input class="btn btn--submit" type="submit" value="Отправить отзыв">
+              <div class="form-submit__help">* — обязательные поля</div>
+            </div>
+
+          </form>
+        </section>
+
+      </main>
+      <footer class="footer">
+        <div class="hashtag">#visitsedona</div>
+        <div class="social-btns">
+          <a href="#" class="social-btn social-btn--twitter">
+          </a>
+          <a href="#" class="social-btn social-btn--facebook">
+          </a>
+          <a href="#" class="social-btn social-btn--youtube">
           </a>
         </div>
-      </div>
-    </header>
-    <main class="page-content">
-      <div class="intro">
-        <div class="intro__image"></div>
-      </div>
-      <section class="form">
-        <div class="form__header">
-          <h2 class="form__title">Оставьте свой отзыв</h2>
-          <p class="form__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, <span class="form__description form__description--shift">а также о посещенных вами достопримечательностях</span></p>
-        </div>
-
-        <form action="https://echo.htmlacademy.ru" method="GET">
-
-          <div class="form-sections">
-            <div class="form-sections__item">
-              <div class="form__legend">Представьтесь<span class="form__legend form__legend--hide">, пожалуйста</span>:</div>
-              <div class="form__line">
-                <label for="name">Имя</label>
-                <input class="form__meet form__meet--long" type="text" placeholder="Петр" id="name" required>
-              </div>
-              <div class="form__line">
-                <label for="surname">Фамилия</label>
-                <input class="form__meet" type="text" placeholder="Иванов" id="surname" required>
-              </div>
-              <div class="form__line">
-                <label for="middle-name">Отчество</label>
-                <input class="form__meet" type="text" placeholder="Александрович" id="middle-name" required>
-              </div>
-            </div>
-
-            <div class="form-sections__item">
-              <div class="form__legend form__legend--decoration">
-                <span class="form__legend form__legend--decoration-title">Контактная информация:</span>
-              </div>
-              <div class="form__line form__line--contact form__line--contact-first">
-                <label for="phone"><span class="form__padding"><span class="form__line form__line--hide">Контактный </span>телефон:</span></label>
-                <div class="form__wrap">
-                  <input class="form__contact" type="tel" placeholder="Введите телефон" id="phone" required>
-                  <div class="form__icon form__icon--phone"></div>
-                </div>
-              </div>
-              <div class="form__line form__line--contact">
-                <label for="email"><span class="form__padding">Электронная почта:</span></label>
-                <div class="form__wrap">
-                  <input class="form__contact" type="email" placeholder="Введите e-mail" id="email" required>
-                  <div class="form__icon form__icon--mail"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-sections__item">
-              <div class="form__legend">Ваше Общее впечатление:</div>
-              <div class="form__line form__line--impression">
-                <input class="form__impression" type="radio" name="impression" value="+1" id="positive" checked>
-                <label for="positive">Скорее положительное</label>
-              </div>
-              <div class="form__line form__line--impression">
-                <input class="form__impression" type="radio" name="impression" value="-1" id="negative">
-                <label for="negative">Скорее отрицательное</label>
-              </div>
-              <div class="form__line form__line--impression">
-                <input class="form__impression" type="radio" name="impression" value="0" id="neutral">
-                <label for="neutral">Затрудняюсь ответить</label>
-              </div>
-            </div>
-
-            <div class="form-sections__item">
-              <div class="form__legend form__legend--decoration">
-                <span class="form__legend form__legend--decoration-title">Посещенные достопримечательности:</span>
-              </div>
-              <div class="form-atractions">
-                <div class="form__line form__line--atraction">
-                  <input class="form__atraction" type="checkbox" name="attraction1" id="attr1" checked>
-                  <label for="attr1">Мост Дьявола</label>
-                </div>
-                <div class="form__line form__line--atraction">
-                  <input class="form__atraction" type="checkbox" name="attraction2" id="attr2" checked>
-                  <label for="attr2">Слайд-парк</label>
-                </div>
-                <div class="form__line form__line--atraction">
-                  <input class="form__atraction" type="checkbox" name="attraction3" id="attr3">
-                  <label for="attr3">Гора-Колокол</label>
-                </div>
-                <div class="form__line form__line--atraction">
-                  <input class="form__atraction" type="checkbox" name="attraction4" id="attr4" checked>
-                  <label for="attr4">Красные скалы</label>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-sections__item">
-              <div class="form__legend form__legend--decoration">
-                <span class="form__legend form__legend--decoration-title">Опишите свои эмоции:</span>
-              </div>
-              <div class="form__comment">
-                <textarea name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
-              </div>
-            </div>
-          </div>
-
-          <div class="form-submit">
-            <input class="btn btn--submit" type="submit" value="Отправить отзыв">
-            <div class="form-submit__help">* — обязательные поля</div>
-          </div>
-
-        </form>
-      </section>
-
-    </main>
-    <footer class="footer">
-      <div class="hashtag">#visitsedona</div>
-      <div class="social-btns">
-        <a href="#" class="social-btn social-btn--twitter">
-        </a>
-        <a href="#" class="social-btn social-btn--facebook">
-        </a>
-        <a href="#" class="social-btn social-btn--youtube">
-        </a>
-      </div>
-      <p class="copyright">
-        <span class="copyright copyright--done">Разработано</span>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-          <img src="img/logo-htmlacademy.svg" class="copyright copyright--icon">
-        </a>
-      </p>
-    </footer>
-
+        <p class="copyright">
+          <span class="copyright copyright--done">Разработано</span>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+            <img src="img/logo-htmlacademy.svg" class="copyright copyright--icon">
+          </a>
+        </p>
+      </footer>
+    </div>
   </body>
 </html>

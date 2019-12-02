@@ -1,0 +1,9 @@
+.icon-advantages {
+  padding: 20px 6%;
+  padding-bottom: 0;
+  min-height: 332px;
+  @media ($tablet-width) {
+    padding: 0;
+    display: flex;
+  }
+}

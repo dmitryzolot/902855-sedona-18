@@ -14,6 +14,7 @@
 
 // подключение всех стилей
 @import "blocks/header.scss";
+@import "blocks/wrapper.scss";
 @import "blocks/menu.scss";
 @import "blocks/logo.scss";
 @import "blocks/intro-index.scss";
@@ -40,3 +41,6 @@
 @import "blocks/form-atractions.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/btn.scss";
+@import "blocks/hamburger.scss";
+@import "blocks/menu-close.scss";
+@import "blocks/advantage-topborder.scss";
