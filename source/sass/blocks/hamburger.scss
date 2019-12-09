@@ -5,4 +5,8 @@
   right: 20px;
   top: 17px;
   background-image: url("../../img/icon-menu.svg");
+
+  @media ($tablet-width) {
+    display: none;
+  }
 }

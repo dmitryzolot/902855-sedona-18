@@ -1,3 +1,7 @@
 .advantage-topborder {
   padding-top: 55px;
+
+  @media ($tablet-width) {
+    padding-top: 47px;
+  }
 }
