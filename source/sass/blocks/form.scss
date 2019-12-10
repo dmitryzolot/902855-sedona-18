@@ -163,7 +163,9 @@
   }
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
   border: 4px solid #f2f2f2;
   outline: none;
   background: #f2f2f2;
@@ -258,6 +260,22 @@ input[type="text"]:focus:hover {
 
 .form__comment textarea:-ms-input-placeholder {
   color: #000000;
+}
+
+.form__contact::-webkit-input-placeholder {
+  color: black;
+}
+
+.form__contact::-moz-placeholder {
+  color: black;
+}
+
+.form__contact:-moz-placeholder {
+  color: black;
+}
+
+.form__contact:-ms-input-placeholder {
+  color: black;
 }
 
 .form__wrap {
