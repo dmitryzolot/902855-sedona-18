@@ -11,6 +11,7 @@
 .advantages__title {
   font-size: 18px;
   margin-top: 10px;
+
   @include after-intro__title;
 
   @media ($tablet-width) {

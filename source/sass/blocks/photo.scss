@@ -7,8 +7,9 @@
   @media ($tablet-width) {
     width: 50%;
     border-top: none;
-    padding: 0px;
+    padding: 0;
     position: relative;
+
     &:nth-child(1) {
       width: 100%;
     }
@@ -16,7 +17,7 @@
 
   @media ($desktop-width) {
     width: 33.333333%;
-    }
+  }
 }
 
 
@@ -28,7 +29,7 @@
 
 
 .photo__picture {
-  margin: 0px;
+  margin: 0;
   overflow: hidden;
 }
 
@@ -56,8 +57,8 @@
   @media ($desktop-width) {
     background: rgba(0, 0, 0, 0.3);
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
     width: 100%;
   }
 }
@@ -74,13 +75,11 @@
     padding-left: 15px;
     padding-bottom: 18px;
   }
+
   @media ($desktop-width) {
     color: white;
   }
 }
-
-
-
 
 .photo__author {
   display: block;
@@ -98,7 +97,7 @@
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
-  padding: 5px 0px;
+  padding: 5px 0;
   display: flex;
 
   @media ($tablet-width) {
@@ -107,7 +106,6 @@
 
   @media ($desktop-width) {
     color: white;
-
   }
 }
 

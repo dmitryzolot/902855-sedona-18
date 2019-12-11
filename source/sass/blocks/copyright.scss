@@ -6,21 +6,27 @@
   color: #000000;
 
   @media ($tablet-width) {
-    padding: 1px;
+    padding: 0;
     margin-top: 40px;
     width: 33.333333%;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
   }
 
   @media ($desktop-width) {
-    padding-left: 180px;
+    padding-left: 0;
     box-sizing: border-box;
   }
 }
 
 .copyright__link {
   height: 53px;
+}
+
+.copyright--done {
+  @media ($tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .copyright--done,
