@@ -6,6 +6,15 @@
   display: block;
   text-decoration: none;
   margin: 0 auto;
-  margin-bottom: 27px;
+  margin-bottom: 48px;
   width: 280px;
+
+  @media ($tablet-width) {
+    margin-bottom: 20px;
+    width: 458px;
+  }
+}
+
+.btn--popup {
+  text-decoration: none;
 }

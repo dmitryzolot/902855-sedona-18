@@ -1,10 +1,12 @@
 .footer {
   width: 100%;
   text-align: center;
-  padding: 33px 0 20px;
+  padding: 35px 0 20px;
 
   @media ($tablet-width) {
     width: 100%;
     padding: 0;
+    display: flex;
+    justify-content: space-between;
   }
 }

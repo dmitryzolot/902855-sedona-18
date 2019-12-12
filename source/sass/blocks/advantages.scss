@@ -1,12 +1,16 @@
 .advantages__description {
   @include after-intro__description;
   padding-top: 15px;
-  padding-bottom: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 0;
+  line-height: 26px;
   color: #333333;
 }
 
 .advantages__title {
   font-size: 18px;
+  margin-top: 10px;
 
   @include after-intro__title;
 
@@ -18,11 +22,12 @@
 .advantages__header {
   @include after-intro__header;
   padding-top: 29px;
-  padding-bottom: 1px;
+  padding-bottom: 0;
+  min-height: 165px;
 
   @media ($tablet-width) {
     font-size: 21px;
-    padding: 38px 15% 20px;
+    padding: 38px 15% 0;
   }
 
   @media ($desktop-width) {
