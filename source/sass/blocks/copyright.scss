@@ -1,5 +1,4 @@
 .copyright {
-  margin: 0 auto;
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
@@ -7,8 +6,6 @@
 
   @media ($tablet-width) {
     padding: 0;
-    margin-top: 40px;
-    width: 33.333333%;
     display: inline-block;
     vertical-align: top;
   }
@@ -21,11 +18,13 @@
 
 .copyright__link {
   height: 53px;
+  margin-top: 20px;
 }
 
 .copyright--done {
   @media ($tablet-width) {
-    margin-top: 0;
+    margin-top: 20px;
+    width: 140px;
   }
 }
 
