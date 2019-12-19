@@ -15,6 +15,8 @@
 
   @media ($tablet-width) {
     font-size: 30px;
+    margin-top: 48px;
+    margin-bottom: 5px;
   }
 
   @media ($desktop-width) {
@@ -33,7 +35,8 @@
     max-width: 458px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
 
   &--shift {
