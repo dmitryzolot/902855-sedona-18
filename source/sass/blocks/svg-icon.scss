@@ -12,4 +12,8 @@
     top: 60px;
     left: 80px;
   }
+
+  @media ($desktop-width) {
+    left: 155px;
+  }
 }

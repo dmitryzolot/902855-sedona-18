@@ -6,6 +6,10 @@
   @media ($tablet-width) {
     min-height: 307px;
   }
+
+  @media ($desktop-width) {
+    min-height: 320px;
+  }
 }
 
 .find-hotel__title {
@@ -37,6 +41,10 @@
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 40px;
+  }
+
+  @media ($desktop-width) {
+    margin-bottom: 46px;
   }
 
   &--shift {

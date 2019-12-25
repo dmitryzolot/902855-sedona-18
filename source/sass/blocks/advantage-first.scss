@@ -15,6 +15,11 @@
     flex-basis: auto;
     width: 33.33%;
   }
+
+  @media ($desktop-width) {
+    max-width: 500px;
+    width: 33.33%;
+  }
 }
 
 .advantage-first::before {
@@ -47,6 +52,21 @@
     padding-top: 0;
     font-size: 21px;
   }
+
+  @media ($desktop-width) {
+    padding-top: 8px;
+    padding-left: 94px;
+    padding-right: 94px;
+    padding-bottom: 8px;
+  }
+
+  &--shift {
+    @media ($desktop-width) {
+      padding-left: 1px;
+      padding-right: 1px;
+      padding-bottom: 2px;
+    }
+  }
 }
 
 .advantage-first__number {
@@ -69,5 +89,10 @@
   @media ($tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  @media ($desktop-width) {
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }

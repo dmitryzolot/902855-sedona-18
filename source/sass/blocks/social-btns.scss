@@ -8,4 +8,8 @@
     display: flex;
     vertical-align: middle;
   }
+
+  @media ($desktop-width) {
+    width: 12.5%;
+  }
 }
