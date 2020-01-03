@@ -4,12 +4,12 @@
   margin: 0 auto;
   position: relative;
 
-  background-image: url("../img/video-mobile.jpg");
-  background-color: $blue;
+  background-image: url("../img/video-mobile@1x.jpg");
+  // background-color: $blue;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 110px;
+  margin-bottom: 103px;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .intro-index {

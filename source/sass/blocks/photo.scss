@@ -1,7 +1,7 @@
 // сам контейнер
 .photo {
   border-top: 1px solid #e5e5e5;
-  padding: 23px 20px 13px;
+  padding: 25px 20px 0;
   position: relative;
 
   @media ($tablet-width) {
@@ -97,7 +97,8 @@
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
-  padding: 5px 0;
+  padding: 6px 0;
+  padding-bottom: 13px;
   display: flex;
 
   @media ($tablet-width) {
@@ -107,6 +108,10 @@
   @media ($desktop-width) {
     color: white;
   }
+}
+
+.photo__likes-number {
+  padding-top: 5px;
 }
 
 .photo__like {

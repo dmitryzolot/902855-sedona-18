@@ -2,6 +2,8 @@
   font-size: 18px;
 
   @include after-intro__title;
+  margin-top: 11px;
+  margin-bottom: 11px;
 }
 
 .photos {
@@ -16,7 +18,7 @@
 
 .photos__header {
   @include after-intro__header;
-  padding: 25px 1px 20px;
+  padding: 25px 1px 15px 1px;
 }
 
 .photos__description {
@@ -24,6 +26,7 @@
   color: #333333;
 
   @include after-intro__description;
+  padding-top: 10px;
 
   &--shift {
     display: inline;
