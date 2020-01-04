@@ -6,7 +6,7 @@
 
   @media ($tablet-width) {
     border-top: none;
-    padding: 45px 15% 38px;
+    padding: 34px 15% 58px;
   }
 
   @media ($desktop-width) {
@@ -16,17 +16,26 @@
 
 .main-promo__title {
   @include after-intro__title;
+
+  @media ($tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .main-promo__description {
   @include after-intro__description;
   padding-top: 11px;
 
+  @media ($tablet-width) {
+    padding-top: 6px;
+  }
+
   &--shift {
     display: inline;
 
     @media ($tablet-width) {
       display: block;
+      padding-top: 0;
     }
   }
 }

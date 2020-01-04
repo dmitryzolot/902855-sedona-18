@@ -52,6 +52,8 @@
     align-items: center;
     justify-content: space-between;
     background: #f2f2f2;
+    padding-top: 7px;
+    padding-left: 4px;
   }
 
   @media ($desktop-width) {
@@ -102,7 +104,8 @@
   display: flex;
 
   @media ($tablet-width) {
-    padding-right: 15px;
+    padding-right: 25px;
+    padding-top: 8px;
   }
 
   @media ($desktop-width) {
@@ -112,6 +115,10 @@
 
 .photo__likes-number {
   padding-top: 5px;
+
+  @media ($tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .photo__like {
