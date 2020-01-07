@@ -11,6 +11,7 @@
 .form__header {
   @include after-intro__header;
   padding-bottom: 6px;
+  padding-top: 18px;
 
   @media ($desktop-width) {
     padding: 60px 15% 30px;
@@ -28,6 +29,7 @@
 
   &--shift {
     display: inline;
+    padding-left: 3%;
 
     @media ($tablet-width) {
       display: block;
@@ -49,6 +51,10 @@
     min-height: 0;
     padding-top: 0;
   }
+
+  &--hide {
+    display: none;
+  }
 }
 
 .form__legend {
@@ -57,6 +63,10 @@
   color: black;
   font-weight: bold;
   text-align: center;
+
+  &--checkbox {
+    padding-bottom: 20px;
+  }
 
   @media ($tablet-width) {
     text-align: left;
@@ -136,6 +146,7 @@
 .form__line--contact {
   width: 100%;
   position: relative;
+  padding-top: 7px;
 
   @media ($tablet-width) {
     margin-top: 15px;
@@ -152,17 +163,19 @@
 }
 
 .form__line--contact-first {
+  padding-top: 20px;
+
   @media ($desktop-width) {
     padding-right: 80px;
     box-sizing: border-box;
   }
 }
 
-.form__line--hide {
-  @media ($desktop-width) {
-    display: none;
-  }
-}
+// .form__line--hide {
+//   @media ($desktop-width) {
+//     display: none;
+//   }
+// }
 
 input[type="text"],
 input[type="tel"],
@@ -183,7 +196,7 @@ input[type="email"] {
 }
 
 input.form__meet[type="text"] {
-  width: 164px;
+  width: 194px;
   margin-left: 15px;
 
   @media ($tablet-width) {
@@ -196,7 +209,7 @@ input.form__meet[type="text"] {
 }
 
 input.form__meet--long[type="text"] {
-  width: 202px;
+  width: 232px;
 
   @media ($tablet-width) {
     width: 182px;
@@ -430,7 +443,7 @@ input.form__atraction[type="checkbox"] {
   margin-right: 10px;
   position: absolute;
   bottom: -12px;
-  left: 10px;
+  left: 2px;
   background-color: #f2f2f2;
   width: 56px;
   height: 56px;
