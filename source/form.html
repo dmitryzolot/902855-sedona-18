@@ -47,7 +47,11 @@
         <div class="header__wrapper">
           <div class="logo">
             <a href="index.html" class="logo__link">
-              <img src="img/logo-sedona-mobile.svg" alt="logo" class="logo__picture">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img src="img/logo-sedona-mobile.svg" alt="logo" class="logo__picture">
+              </picture>
             </a>
           </div>
           <div class="hamburger">
@@ -76,16 +80,16 @@
             <div class="form-sections">
               <div class="form-sections__item">
                 <div class="form__legend">Представьтесь<span class="form__legend form__legend--hide"></span>:</div>
-                <div class="form__line">
-                  <label for="name">Имя</label>
+                <div class="form__line form__line--name">
+                  <label for="name">Имя*:</label>
                   <input class="form__meet form__meet--long" type="text" placeholder="Петр" id="name" required>
                 </div>
-                <div class="form__line">
-                  <label for="surname">Фамилия</label>
+                <div class="form__line form__line--name">
+                  <label for="surname">Фамилия*:</label>
                   <input class="form__meet" type="text" placeholder="Иванов" id="surname" required>
                 </div>
-                <div class="form__line">
-                  <label for="middle-name">Отчество</label>
+                <div class="form__line form__line--name">
+                  <label for="middle-name">Отчество:</label>
                   <input class="form__meet" type="text" placeholder="Александрович" id="middle-name" required>
                 </div>
               </div>

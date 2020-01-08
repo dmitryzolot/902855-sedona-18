@@ -46,6 +46,10 @@
       align-items: center;
       margin-bottom: 50px;
 
+      @media ($tablet-width) {
+        margin-bottom: 45px;
+      }
+
       @media ($desktop-width) {
         flex-direction: row;
         align-items: stretch;

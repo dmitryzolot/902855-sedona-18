@@ -5,10 +5,13 @@
 
   @media ($tablet-width) {
     flex-wrap: wrap;
-    width: 100%;
+    width: 82%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     margin-top: -44px;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 13%;
   }
 }
