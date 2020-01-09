@@ -1,0 +1,19 @@
+.svg-icon {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  fill: #81b3d2;
+  width: 40px;
+  height: 40px;
+
+  @media ($tablet-width) {
+    width: 90px;
+    height: 70px;
+    top: 60px;
+    left: 80px;
+  }
+
+  @media ($desktop-width) {
+    left: 155px;
+  }
+}

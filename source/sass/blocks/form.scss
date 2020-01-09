@@ -11,15 +11,30 @@
 .form__header {
   @include after-intro__header;
   padding-bottom: 6px;
+  padding-top: 18px;
+
+  @media ($tablet-width) {
+    padding-bottom: 60px;
+  }
 
   @media ($desktop-width) {
-    padding: 60px 15% 30px;
+    padding: 55px 15% 45px;
   }
 }
 
 
 .form__title {
   @include after-intro__title;
+
+  @media ($tablet-width) {
+    font-size: 30px;
+    padding-top: 32px;
+    margin-bottom: 20px;
+  }
+
+  @media ($desktop-width) {
+    padding-top: 31px;
+  }
 }
 
 .form__description {
@@ -28,9 +43,11 @@
 
   &--shift {
     display: inline;
+    padding-left: 3%;
 
     @media ($tablet-width) {
       display: block;
+      padding-top: 0;
     }
   }
 }
@@ -49,6 +66,16 @@
     min-height: 0;
     padding-top: 0;
   }
+
+  &--hide {
+    display: none;
+  }
+
+  &--name {
+    @media ($tablet-width) {
+      padding-bottom: 8px;
+    }
+  }
 }
 
 .form__legend {
@@ -57,6 +84,18 @@
   color: black;
   font-weight: bold;
   text-align: center;
+
+  &--checkbox {
+    padding-bottom: 20px;
+
+    @media ($tablet-width) {
+      padding-bottom: 0;
+    }
+
+    @media ($desktop-width) {
+      padding-left: 80px;
+    }
+  }
 
   @media ($tablet-width) {
     text-align: left;
@@ -83,16 +122,16 @@
     text-align: center;
     position: relative;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 0;
 
     &::before {
       content: "";
       display: block;
-      width: 25%;
+      width: 19%;
       height: 1px;
       background: #dbdbdb;
       transform: translateY(-50%);
-      top: 50%;
+      top: 29%;
       position: absolute;
       left: 0;
     }
@@ -100,16 +139,18 @@
     &-title {
       width: 50%;
       display: inline-block;
+      margin-bottom: 23px;
+      text-align: center;
     }
 
     &::after {
       content: "";
       display: block;
-      width: 25%;
+      width: 19%;
       height: 1px;
       background: #dbdbdb;
       transform: translateY(-50%);
-      top: 50%;
+      top: 29%;
       position: absolute;
       right: 0;
     }
@@ -136,34 +177,43 @@
 .form__line--contact {
   width: 100%;
   position: relative;
+  padding-top: 7px;
 
   @media ($tablet-width) {
-    margin-top: 15px;
+    margin-top: 0;
+    padding-bottom: 5px;
   }
 
   @media ($desktop-width) {
     width: 50%;
-    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 4px;
   }
 }
 
 .form__line--contact-first {
+  padding-top: 20px;
+
+  @media ($tablet-width) {
+    padding-top: 0;
+    padding-bottom: 9px;
+  }
+
   @media ($desktop-width) {
     padding-right: 80px;
     box-sizing: border-box;
+    padding-top: 4px;
   }
 }
 
-.form__line--hide {
-  @media ($desktop-width) {
-    display: none;
-  }
-}
+// .form__line--hide {
+//   @media ($desktop-width) {
+//     display: none;
+//   }
+// }
 
-input[type="text"],
 input[type="tel"],
 input[type="email"] {
   border: 4px solid #f2f2f2;
@@ -174,34 +224,62 @@ input[type="email"] {
   font-size: 18px;
   font-weight: bold;
   padding-left: 20px;
+  padding-top: 26px;
+  box-sizing: border-box;
 
   @media ($tablet-width) {
     width: 100%;
   }
+
+  @media ($desktop-width) {
+    padding-top: 24px;
+  }
 }
 
-input.form__meet[type="text"] {
-  width: 164px;
-  margin-left: 15px;
+input[type="text"] {
+  border: 4px solid #f2f2f2;
+  outline: none;
+  background: #f2f2f2;
+  height: 50px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-top: 5px;
+  box-sizing: border-box;
 
   @media ($tablet-width) {
-    width: 144px;
+    width: 100%;
   }
 
   @media ($desktop-width) {
-    width: 284px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+input.form__meet[type="text"] {
+  width: 174px;
+  margin-left: 15px;
+
+  @media ($tablet-width) {
+    width: 180px;
+  }
+
+  @media ($desktop-width) {
+    width: 316px;
   }
 }
 
 input.form__meet--long[type="text"] {
-  width: 202px;
+  width: 224px;
 
   @media ($tablet-width) {
-    width: 182px;
+    width: 218px;
   }
 
   @media ($desktop-width) {
-    width: 322px;
+    width: 353px;
   }
 }
 
@@ -228,6 +306,11 @@ input[type="text"]:focus,
 input[type="text"]:focus:hover {
   background: white;
   border: 4px solid #e5e5e5;
+}
+
+.form__contact {
+  padding-top: 25px;
+  padding-bottom: 27px;
 }
 
 .form__meet::-webkit-input-placeholder {
@@ -337,6 +420,14 @@ input[type="text"]:focus:hover {
   }
 }
 
+.form__padding--shift {
+  padding-left: 0;
+
+  @media ($desktop-width) {
+    display: none;
+  }
+}
+
 .form__error {
   text-transform: none;
   color: #ff5c5c;
@@ -382,7 +473,7 @@ input[type="text"]:focus:hover {
     min-width: 180px;
     margin-top: 60px;
     width: 50%;
-    padding-left: 70px;
+    padding-left: 57px;
     box-sizing: border-box;
 
     &:nth-child(1) {
@@ -390,13 +481,21 @@ input[type="text"]:focus:hover {
     }
 
     &:nth-child(3) {
-      order: -1;
+      order: 0;
     }
   }
 
   @media ($desktop-width) {
     width: 25%;
-    padding-left: 0;
+    padding-left: 31px;
+
+    &:nth-child(1) {
+      padding-left: 0;
+    }
+
+    &:nth-child(2) {
+      padding-left: 17px;
+    }
   }
 }
 
@@ -409,6 +508,10 @@ input[type="text"]:focus:hover {
   text-transform: none;
   font-weight: bold;
   font-size: 18px;
+
+  @media ($tablet-width) {
+    padding-left: 81px;
+  }
 }
 
 input.form__impression[type="radio"],
@@ -423,7 +526,7 @@ input.form__atraction[type="checkbox"] {
   margin-right: 10px;
   position: absolute;
   bottom: -12px;
-  left: 10px;
+  left: 2px;
   background-color: #f2f2f2;
   width: 56px;
   height: 56px;
@@ -485,10 +588,10 @@ input.form__atraction[type="checkbox"]:checked + label::before {
     width: 100%;
     box-sizing: border-box;
     height: 160px;
-    margin-top: 50px;
+    margin-top: 36px;
   }
 
   @media ($desktop-width) {
-    margin-top: 20px;
+    margin-top: -15px;
   }
 }

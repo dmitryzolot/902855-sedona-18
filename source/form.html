@@ -33,6 +33,9 @@
         <h1 class="visually-hidden">Город-курорт Седона</h1>
         <nav class="menu">
           <div class="menu-close">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+              <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
+            </svg>
           </div>
           <ul class="menu__list">
             <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
@@ -44,11 +47,21 @@
         <div class="header__wrapper">
           <div class="logo">
             <a href="index.html" class="logo__link">
-              <img src="img/logo-sedona-mobile.svg" alt="logo" class="logo__picture">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img src="img/logo-sedona-mobile.svg" alt="logo" class="logo__picture">
+              </picture>
             </a>
           </div>
           <div class="hamburger">
-            <span class="hamburger-box"></span>
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+              <g>
+                <rect width="22.928" height="3.964"/>
+                <rect y="9.009" width="22.928" height="3.964"/>
+                <rect y="18.018" width="22.928" height="3.964"/>
+              </g>
+            </svg>
           </div>
         </div>
       </header>
@@ -59,24 +72,24 @@
         <section class="form">
           <div class="form__header">
             <h2 class="form__title">Оставьте свой отзыв</h2>
-            <p class="form__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, <span class="form__description form__description--shift">а также о посещенных вами достопримечательностях</span></p>
+            <p class="form__description">Помогите нашим отелям стать лучше! оставьте отзыв о них,<span class="form__description form__description--shift">а также о посещенных вами достопримечательностях</span></p>
           </div>
 
           <form action="https://echo.htmlacademy.ru" method="GET">
 
             <div class="form-sections">
               <div class="form-sections__item">
-                <div class="form__legend">Представьтесь<span class="form__legend form__legend--hide">, пожалуйста</span>:</div>
-                <div class="form__line">
-                  <label for="name">Имя</label>
+                <div class="form__legend">Представьтесь<span class="form__legend form__legend--hide"></span>:</div>
+                <div class="form__line form__line--name">
+                  <label for="name">Имя*:</label>
                   <input class="form__meet form__meet--long" type="text" placeholder="Петр" id="name" required>
                 </div>
-                <div class="form__line">
-                  <label for="surname">Фамилия</label>
+                <div class="form__line form__line--name">
+                  <label for="surname">Фамилия*:</label>
                   <input class="form__meet" type="text" placeholder="Иванов" id="surname" required>
                 </div>
-                <div class="form__line">
-                  <label for="middle-name">Отчество</label>
+                <div class="form__line form__line--name">
+                  <label for="middle-name">Отчество:</label>
                   <input class="form__meet" type="text" placeholder="Александрович" id="middle-name" required>
                 </div>
               </div>
@@ -86,14 +99,14 @@
                   <span class="form__legend form__legend--decoration-title">Контактная информация:</span>
                 </div>
                 <div class="form__line form__line--contact form__line--contact-first">
-                  <label for="phone"><span class="form__padding"><span class="form__line form__line--hide">Контактный </span>телефон:</span></label>
+                  <label for="phone"><span class="form__padding"><span class="form__padding form__padding--shift">Контактный</span> телефон*:<span class="form__line form__line--hide"></span></span></label>
                   <div class="form__wrap">
                     <input class="form__contact" type="tel" placeholder="Введите телефон" id="phone" required>
                     <div class="form__icon form__icon--phone"></div>
                   </div>
                 </div>
                 <div class="form__line form__line--contact">
-                  <label for="email"><span class="form__padding">Электронная почта:</span></label>
+                  <label for="email"><span class="form__padding">Электронная почта*:</span></label>
                   <div class="form__wrap">
                     <input class="form__contact" type="email" placeholder="Введите e-mail" id="email" required>
                     <div class="form__icon form__icon--mail"></div>
@@ -102,7 +115,7 @@
               </div>
 
               <div class="form-sections__item">
-                <div class="form__legend">Ваше Общее впечатление:</div>
+                <div class="form__legend form__legend--checkbox">Ваше Общее впечатление:</div>
                 <div class="form__line form__line--impression">
                   <input class="form__impression" type="radio" name="impression" value="+1" id="positive" checked>
                   <label for="positive">Скорее положительное</label>
@@ -128,14 +141,14 @@
                   </div>
                   <div class="form__line form__line--atraction">
                     <input class="form__atraction" type="checkbox" name="attraction2" id="attr2" checked>
-                    <label for="attr2">Слайд-парк</label>
+                    <label for="attr2">Гора-Колокол</label>
                   </div>
                   <div class="form__line form__line--atraction">
-                    <input class="form__atraction" type="checkbox" name="attraction3" id="attr3">
-                    <label for="attr3">Гора-Колокол</label>
+                    <input class="form__atraction" type="checkbox" name="attraction3" id="attr3" checked>
+                    <label for="attr3">Слайд-парк</label>
                   </div>
                   <div class="form__line form__line--atraction">
-                    <input class="form__atraction" type="checkbox" name="attraction4" id="attr4" checked>
+                    <input class="form__atraction" type="checkbox" name="attraction4" id="attr4">
                     <label for="attr4">Красные скалы</label>
                   </div>
                 </div>

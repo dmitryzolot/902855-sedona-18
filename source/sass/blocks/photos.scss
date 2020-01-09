@@ -2,6 +2,13 @@
   font-size: 18px;
 
   @include after-intro__title;
+  margin-top: 11px;
+  margin-bottom: 11px;
+
+  @media ($tablet-width) {
+    font-size: 30px;
+    margin-bottom: 21px;
+  }
 }
 
 .photos {
@@ -10,13 +17,22 @@
   }
 
   @media ($desktop-width) {
-    padding: 1;
+    padding: 0;
   }
 }
 
 .photos__header {
   @include after-intro__header;
-  padding: 25px 1px 20px;
+  padding: 25px 1px 15px 1px;
+
+  @media ($tablet-width) {
+    padding-top: 62px;
+    padding-bottom: 55px;
+  }
+
+  @media ($desktop-width) {
+    padding-top: 102px;
+  }
 }
 
 .photos__description {
@@ -24,6 +40,15 @@
   color: #333333;
 
   @include after-intro__description;
+  padding-top: 10px;
+
+  @media ($tablet-width) {
+    max-width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   &--shift {
     display: inline;
@@ -38,5 +63,9 @@
   @media ($tablet-width) {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  @media ($desktop-width) {
+    width: 100%;
   }
 }

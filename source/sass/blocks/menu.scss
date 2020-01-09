@@ -15,6 +15,7 @@
 
   @media ($tablet-width) {
     text-align: center;
+    display: flex;
   }
 }
 
@@ -55,6 +56,12 @@
 
     &:nth-child(2) {
       margin-right: 150px;
+    }
+
+    &:nth-child(3) {
+      @media ($desktop-width) {
+        margin-left: 100px;
+      }
     }
   }
 
