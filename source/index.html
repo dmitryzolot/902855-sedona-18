@@ -64,7 +64,11 @@
               </div>
             </div>
             <div class="picture-advantage">
-              <img src="img/main-city-mobile@1x.jpg" alt="picture-advantage" class="picture-advantage__photo">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+                <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="picture-advantage" class="picture-advantage__photo">
+              </picture>
             </div>
           </div>
 
@@ -125,7 +129,11 @@
                 <div class="advantage__description advantage__description--white">Да, по нему можно пройти! Если Вы осмелитесь, конечно</div>
               </div>
               <div class="picture-advantage picture-advantage--bottom">
-                <img src="img/main-bridge-mobile@1x.jpg" alt="picture-advantage" class="picture-advantage__photo">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg, img/main-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+                  <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="picture-advantage" class="picture-advantage__photo">
+                </picture>
               </div>
             </div>
           </div>
