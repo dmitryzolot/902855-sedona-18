@@ -1,6 +1,15 @@
 .menu {
   text-align: center;
-  // display: none;
+  display: none;
+
+  @media ($tablet-width) {
+    text-align: center;
+    display: block;
+  }
+}
+
+.menu--nojs {
+  display: block;
 }
 
 .menu--opened {
