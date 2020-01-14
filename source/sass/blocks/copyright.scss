@@ -18,18 +18,20 @@
 
 .copyright__link {
   height: 53px;
-  margin-top: 20px;
+  margin-top: 15px;
 
   @media ($tablet-width) {
-    margin-top: 28px;
+    margin-top: 20px;
     height: 43px;
     padding-right: 16px;
   }
 }
 
 .copyright--done {
+  margin-top: 10px;
+
   @media ($tablet-width) {
-    margin-top: 20px;
+    margin-top: 27px;
     width: 140px;
   }
 }
