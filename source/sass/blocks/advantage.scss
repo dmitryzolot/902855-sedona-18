@@ -167,6 +167,8 @@
 
   @media ($tablet-width) {
     padding-top: 45px;
+    padding-left: 7%;
+    padding-right: 7%;
   }
 
   @media ($desktop-width) {
@@ -214,10 +216,11 @@
 
     @media ($tablet-width) {
       display: block;
-      max-width: 160px;
+      max-width: 162px;
       margin: 0 auto;
       text-align: center;
       padding-left: 0;
+      padding-top: 23px;
     }
 
     @media ($desktop-width) {
