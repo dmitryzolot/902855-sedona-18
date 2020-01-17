@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="wrapper">
@@ -207,32 +207,7 @@
       </footer>
     </div>
 
-    <script>
-
-      var navMenu = document.querySelector('.menu');
-      var navHamburger = document.querySelector('.hamburger');
-      var navMenuclose = document.querySelector('.menu-close');
-
-      navMenu.classList.remove('menu--nojs');
-      navMenu.classList.remove('menu--opened');
-      navHamburger.classList.remove('hamburger--hidden');
-
-
-      navHamburger.addEventListener('click', function() {
-        navMenuclose.classList.remove('menu-close--hidden');
-        navMenu.classList.add('menu--opened');
-        navHamburger.classList.add('hamburger--hidden');
-        }
-      );
-
-      navMenuclose.addEventListener('click', function() {
-        navMenu.classList.remove('menu--opened');
-        navMenuclose.classList.add('menu-close--hidden');
-        navHamburger.classList.remove('hamburger--hidden');
-        }
-      );
-
-    </script>
+    <script src="js/script.js"></script>
 
   </body>
 </html>
