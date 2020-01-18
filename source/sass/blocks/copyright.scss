@@ -27,7 +27,7 @@
   }
 }
 
-.copyright--done {
+.copyright__done {
   margin-top: 10px;
 
   @media ($tablet-width) {
@@ -36,16 +36,16 @@
   }
 }
 
-.copyright--done,
+.copyright__done,
 .copyright__link {
   display: inline-block;
   vertical-align: middle;
 }
 
-.copyright--icon:hover {
+.copyright__icon:hover {
   fill: $blue;
 }
 
-.copyright--icon:active {
+.copyright__icon:active {
   fill: #b2b2b2;
 }
