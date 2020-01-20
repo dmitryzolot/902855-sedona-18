@@ -15,11 +15,3 @@
     position: static;
   }
 }
-
-.header__menu-toggle {
-  float: right;
-
-  @media ($tablet-width) {
-    display: none;
-  }
-}
