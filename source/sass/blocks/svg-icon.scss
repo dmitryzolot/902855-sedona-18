@@ -10,10 +10,7 @@
     width: 90px;
     height: 70px;
     top: 60px;
-    left: 80px;
-  }
-
-  @media ($desktop-width) {
-    left: 155px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

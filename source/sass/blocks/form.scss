@@ -228,21 +228,23 @@
   border: 4px solid #f2f2f2;
   outline: none;
   background: #f2f2f2;
-  height: 50px;
+  height: 60px;
   color: black;
   font-size: 18px;
   font-weight: bold;
   padding-left: 20px;
-  padding-top: 26px;
+  padding-top: 10px;
   box-sizing: border-box;
 
   @media ($tablet-width) {
     width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 
   @media ($desktop-width) {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }
 
@@ -319,8 +321,8 @@ input[type="text"]:focus:hover {
 }
 
 .form__contact {
-  padding-top: 25px;
-  padding-bottom: 27px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .form__meet::-webkit-input-placeholder {
@@ -535,11 +537,15 @@ input.form__atraction[type="checkbox"] {
   display: inline-block;
   margin-right: 10px;
   position: absolute;
-  bottom: 4px;
+  bottom: -16px;
   left: 2px;
   background-color: #f2f2f2;
   width: 56px;
   height: 56px;
+
+  @media ($tablet-width) {
+    bottom: -4px;
+  }
 }
 
 .form__line--impression label::before {
